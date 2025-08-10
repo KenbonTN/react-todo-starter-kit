@@ -24,7 +24,7 @@ const TodoList = () => {
 
   const handleEditSave = (id: number) => {
     if (editedTodoText.trim() !== '') {
-      const updatedTodo = TodoServices.updateTodo({
+      TodoServices.updateTodo({
         id,
         text: editedTodoText,
         completed: false,
